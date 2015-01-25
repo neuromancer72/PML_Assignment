@@ -1,0 +1,17 @@
+---
+title: "Practical Machine Learning"
+author: "Roberto Dotti"
+date: "Sunday, January 25, 2015"
+output: html_document
+---
+The data for this project cames from [http://groupware.les.inf.puc-rio.br/har](http://groupware.les.inf.puc-rio.br/har) and was used by Eduardo Velloso et al. for the study: "Qualitative Activity Recognition of Weight Lifting Exercises".
+
+The purpose of this study was to evaluate the quality of a particular exercise starting from the data collected by accelerometers put on the belt, forearm, arm, and dumbell of 6 participants.They were asked to perform barbell lifts correctly and incorrectly in 5 different ways. 
+
+
+```{r,warning=FALSE}
+library(caret)
+library(Hmisc)
+library(party)
+library(randomForest)
+```
